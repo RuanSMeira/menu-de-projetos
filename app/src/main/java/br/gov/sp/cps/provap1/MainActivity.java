@@ -25,9 +25,15 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
         Button btnIMC = findViewById(R.id.btnImc);
+        Button btnJokenpo = findViewById(R.id.btnJokenpo);
 
         btnIMC.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, IMCActivity.class);
+            startActivity(intent);
+        });
+
+        btnJokenpo.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, JokenpoActivity.class);
             startActivity(intent);
         });
     }
