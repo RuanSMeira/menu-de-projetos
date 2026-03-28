@@ -20,6 +20,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".prjIMC.IMCActivity" />
+        <activity android:name=".prjIMC.ResultadoImcActivity" />
     </application>
 
 </manifest>

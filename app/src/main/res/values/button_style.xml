@@ -1,13 +1,49 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-    <style name="button_style">
-        <item name="android:backgroundTint">@color/cor_padrao</item>
+    <style name="ButtonStyleBase">
         <item name="android:textSize">20sp</item>
-        <item name="android:layout_marginTop">20dp</item>
-        <item name="android:layout_marginEnd">20dp</item>
         <item name="strokeWidth">2dp</item>
         <item name="cornerRadius">0dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
     </style>
 
+    <style name="ButtonStyle.MenuGeral" parent="ButtonStyleBase">
+        <item name="android:backgroundTint">@color/cor_padrao</item>
+    </style>
+
+    <style name="ButtonStyle.Calcular" parent="ButtonStyleBase">
+        <item name="android:backgroundTint">#3F51B5</item> </style>
+
+    <style name="ButtonStyle.VoltarMagreza" parent="ButtonStyleBase">
+        <item name="android:backgroundTint">@color/texto_alerta</item> <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="ButtonStyle.VoltarNormal" parent="ButtonStyleBase">
+        <item name="android:backgroundTint">#2E7D32</item> <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="ButtonStyle.VoltarSobrepeso" parent="ButtonStyleBase">
+        <item name="android:backgroundTint">#FF8F00</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="ButtonStyle.VoltarObeso1" parent="ButtonStyleBase">
+        <item name="android:backgroundTint">#EF6C00</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="ButtonStyle.VoltarObeso2" parent="ButtonStyleBase">
+        <item name="android:backgroundTint">#C62828</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="ButtonStyle.VoltarObeso3" parent="ButtonStyleBase">
+        <item name="android:backgroundTint">#8E0000</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="ButtonStyle.VoltarIdeal" parent="ButtonStyleBase">
+        <item name="android:backgroundTint">#4CAF50</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
 </resources>
