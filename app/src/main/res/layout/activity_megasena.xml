@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MegasenaActivity">
+
+    <TextView
+        android:id="@+id/txtTituloMega"
+        style="@style/TextTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resultado Mega-Sena"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <TextView
+        android:id="@+id/txtNum1"
+        style="@style/TextBody"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/borda"
+        android:gravity="center"
+        android:text="--"
+        app:layout_constraintBottom_toTopOf="@+id/txtNum5"
+        app:layout_constraintEnd_toStartOf="@+id/txtNum2"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTituloMega" />
+
+    <TextView
+        android:id="@+id/txtNum2"
+        style="@style/TextBody"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/borda"
+        android:gravity="center"
+        android:text="--"
+        app:layout_constraintBottom_toBottomOf="@+id/txtNum1"
+        app:layout_constraintEnd_toStartOf="@+id/txtNum3"
+        app:layout_constraintStart_toEndOf="@+id/txtNum1"
+        app:layout_constraintTop_toTopOf="@+id/txtNum1" />
+
+    <TextView
+        android:id="@+id/txtNum3"
+        style="@style/TextBody"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/borda"
+        android:gravity="center"
+        android:text="--"
+        app:layout_constraintBottom_toBottomOf="@+id/txtNum1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtNum2"
+        app:layout_constraintTop_toTopOf="@+id/txtNum1" />
+
+    <TextView
+        android:id="@+id/txtNum4"
+        style="@style/TextBody"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/borda"
+        android:gravity="center"
+        android:text="--"
+        app:layout_constraintBottom_toTopOf="@+id/btnSortearNumeros"
+        app:layout_constraintEnd_toStartOf="@+id/txtNum5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNum1" />
+
+    <TextView
+        android:id="@+id/txtNum5"
+        style="@style/TextBody"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/borda"
+        android:gravity="center"
+        android:text="--"
+        app:layout_constraintBottom_toBottomOf="@+id/txtNum4"
+        app:layout_constraintEnd_toStartOf="@+id/txtNum6"
+        app:layout_constraintStart_toEndOf="@+id/txtNum4"
+        app:layout_constraintTop_toTopOf="@+id/txtNum4" />
+
+    <TextView
+        android:id="@+id/txtNum6"
+        style="@style/TextBody"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/borda"
+        android:gravity="center"
+        android:text="--"
+        app:layout_constraintBottom_toBottomOf="@+id/txtNum4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtNum5"
+        app:layout_constraintTop_toTopOf="@+id/txtNum4" />
+
+    <Button
+        android:id="@+id/btnSortearNumeros"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:onClick="sorteioNumeros"
+        android:text="Sortear Números"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNum4"
+        app:layout_constraintVertical_bias="0.4" />
+
+    <Button
+        android:id="@+id/btnLimparNumeros"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="limparNumeros"
+        android:text="Limpar"
+        app:layout_constraintEnd_toStartOf="@+id/btnVoltarMenuPrincipal"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSortearNumeros" />
+
+    <Button
+        android:id="@+id/btnVoltarMenuPrincipal"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Voltar"
+        android:textColor="#F44336"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnLimparNumeros"
+        app:layout_constraintTop_toTopOf="@+id/btnLimparNumeros" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
