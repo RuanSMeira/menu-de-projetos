@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutResultado"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+
+    <TextView
+        android:id="@+id/txtTituloResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:gravity="top"
+        android:text="Resultado da Felicidade"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtResultadoFelicidade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pontuação: --"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="30dp" />
+
+    <TextView
+        android:id="@+id/txtResultadoClassificacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Classificação: --"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="30dp" />
+
+
+    <Button
+        android:id="@+id/btnVoltar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#F44336"
+        android:text="Voltar"
+        android:textSize="18sp" />
+
+</LinearLayout>

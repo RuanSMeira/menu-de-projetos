@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutFelicidade"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+
+    <TextView
+        android:id="@+id/txtAtividade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Atividade atual"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="#FF0000" />
+
+
+    <CheckBox
+        android:id="@+id/cbEstudando"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Estudando"
+        android:textStyle="bold"
+        android:textSize="20sp" />
+
+    <CheckBox
+        android:id="@+id/cbTrabalhando"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Trabalhando"
+        android:textStyle="bold"
+        android:textSize="20sp" />
+
+    <CheckBox
+        android:id="@+id/cbFolga"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Folga"
+        android:textStyle="bold"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/txtSono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Horas de sono:"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="#FF0000"
+        android:layout_marginTop="16dp" />
+
+    <RadioGroup
+        android:id="@+id/rgSono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rbSono1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="0 a 3h" />
+
+        <RadioButton
+            android:id="@+id/rbSono2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="4 a 8h" />
+
+        <RadioButton
+            android:id="@+id/rbSono3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="9 a 12h" />
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/txtEstresse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nível de estresse:"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="#FF0000"
+        android:layout_marginTop="16dp" />
+
+    <RadioGroup
+        android:id="@+id/rgEstresse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rbEstresse1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="0 a 3" />
+
+        <RadioButton
+            android:id="@+id/rbEstresse2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="4 a 7" />
+
+        <RadioButton
+            android:id="@+id/rbEstresse3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="8 a 10" />
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/btnCalcularFelicidade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calcular"
+        android:textSize="18sp"
+        android:backgroundTint="#FF0000"
+        android:layout_marginTop="20dp" />
+
+
+    <Button
+        android:id="@+id/btnVoltarMenuPrincipal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Voltar"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

@@ -23,6 +23,9 @@
         <activity android:name=".prjIMC.IMCActivity" />
         <activity android:name=".prjIMC.ResultadoImcActivity" />
         <activity android:name=".JokenpoActivity"/>
+        <activity android:name=".MegasenaActivity"/>
+        <activity android:name=".prjFelicidade.FelicidadeActivity"/>
+        <activity android:name=".prjFelicidade.ResultadoFelicidadeActivity"/>
     </application>
 
 </manifest>

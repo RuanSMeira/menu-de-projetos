@@ -10,6 +10,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import br.gov.sp.cps.provap1.prjFelicidade.FelicidadeActivity;
 import br.gov.sp.cps.provap1.prjIMC.IMCActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -26,6 +27,8 @@ public class MainActivity extends AppCompatActivity {
         });
         Button btnIMC = findViewById(R.id.btnImc);
         Button btnJokenpo = findViewById(R.id.btnJokenpo);
+        Button btnMegaSena = findViewById(R.id.btnMegaSena);
+        Button btnQuestionario = findViewById(R.id.btnQuestionario);
 
         btnIMC.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, IMCActivity.class);
@@ -34,6 +37,16 @@ public class MainActivity extends AppCompatActivity {
 
         btnJokenpo.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, JokenpoActivity.class);
+            startActivity(intent);
+        });
+
+        btnMegaSena.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, MegasenaActivity.class);
+            startActivity(intent);
+        });
+
+        btnQuestionario.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, FelicidadeActivity.class);
             startActivity(intent);
         });
     }

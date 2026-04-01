@@ -31,7 +31,6 @@ public class JokenpoActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_jokenpo);
 
-        // Inicializa os componentes da tela
         textResultado = findViewById(R.id.textResultado);
         txtPlacar = findViewById(R.id.txtPlacar);
         imgResultado = findViewById(R.id.imgResultado);
